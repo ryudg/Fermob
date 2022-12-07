@@ -10,6 +10,9 @@
 body {
   max-width: 100vw;
 }
+img {
+  display: block;
+}
 header {
   height: 60px;
   display: flex;
@@ -161,7 +164,9 @@ main video {
 }
 /* ----------main end---------- */
 /* ----------section start---------- */
-section .best-selling .best-selling-title {
+/* best-selling */
+section .best-selling .best-selling-title,
+section .new-arrivals .new-arrivals-title {
   width: 100%;
   height: 100px;
   display: flex;
@@ -169,7 +174,8 @@ section .best-selling .best-selling-title {
   align-items: center;
   font-size: 28px;
   font-weight: 700;
-  border-bottom: 3px solid #000;
+  border: 3px solid #000;
+  border-top: 0;
 }
 section .best-selling .best-selling-item,
 section .best-selling .best-selling-item2,
@@ -178,6 +184,7 @@ section .best-selling .best-selling-item4 {
   width: 100%;
   height: 720px;
   display: flex;
+  border-left: 3px solid #000;
 }
 .best-selling-item-main {
   border-right: 3px solid #000;
@@ -188,7 +195,6 @@ section .best-selling .best-selling-item4 {
 .best-selling-item-main a img {
   width: 100%;
   height: 100%;
-  display: block;
   object-fit: cover;
 }
 
@@ -207,12 +213,39 @@ section .best-selling .best-selling-item4 {
 .best-selling-item-sub .best-selling-items img {
   width: 100%;
   height: 100%;
-  object-fit: fill;
-  transition: 100s;
+  object-fit: cover;
 }
 @media (max-width: 1024px) {
   .best-selling-item-main {
     display: none;
+  }
+}
+/* new-arrivals */
+section .new-arrivals .new-arrivals-items {
+  width: 100%;
+  height: 360px;
+  display: flex;
+  flex-wrap: wrap;
+}
+section .new-arrivals .new-arrivals-item:first-child {
+  border-left: 3px solid #000;
+}
+section .new-arrivals .new-arrivals-item {
+  width: 25%;
+  border-bottom: 3px solid #000;
+  border-right: 3px solid #000;
+}
+section .new-arrivals .new-arrivals-item a img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+@media (max-width: 1024px) {
+  section .new-arrivals .new-arrivals-item {
+    width: 50%;
+  }
+  section .new-arrivals .new-arrivals-item:nth-child(3) {
+    border-left: 3px solid #000;
   }
 }
 /* ----------section end---------- */

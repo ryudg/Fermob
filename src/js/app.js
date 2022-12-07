@@ -10,6 +10,9 @@ let bestSubItems3 = document.querySelectorAll(
 let bestSubItems4 = document.querySelectorAll(
   ".best-selling-item4 .best-selling-items a img"
 );
+let newArrivalsItem = document.querySelectorAll(
+  ".new-arrivals .new-arrivals-item a img"
+);
 
 for (let i = 0; i < bestSubItems.length; i++) {
   bestSubItems[i].addEventListener("mouseover", function (e) {
@@ -41,5 +44,13 @@ for (let i = 0; i < bestSubItems4.length; i++) {
   });
   bestSubItems4[i].addEventListener("mouseout", function (e) {
     e.target.src = `./src/images/acceBest0${i + 1}.png`;
+  });
+}
+for (let i = 0; i < newArrivalsItem.length; i++) {
+  newArrivalsItem[i].addEventListener("mouseover", function (e) {
+    e.target.src = `./src/images/newArr0${i + 1}-1.png`;
+  });
+  newArrivalsItem[i].addEventListener("mouseout", function (e) {
+    e.target.src = `./src/images/newArr0${i + 1}.png`;
   });
 }
