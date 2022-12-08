@@ -1,0 +1,35 @@
+:root {
+  --main: #45474f;
+}
+* {
+  word-break: keep-all;
+}
+
+/* ----------section start---------- */
+.here {
+  font-weight: 700;
+  font-size: 18px;
+  color: var(--main);
+}
+.section-title {
+  padding-top: 60px;
+  border: 2px solid #000;
+  border-top: 0;
+}
+.section-title .furnitrue-title {
+  text-align: center;
+  padding: 20px;
+  font-size: 24px;
+}
+.section-title .furnitrue-lnb ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.section-title .furnitrue-lnb ul li {
+  padding: 5px 10px;
+}
+.section-title .furnitrue-lnb ul li a {
+  color: #000;
+}
+/* ----------section end---------- */

@@ -1,14 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://ryudg.github.io/Fermob/" />
+    <meta property="og:title" content="Fermob" />
+    <meta property="og:image" content="https://i.imgur.com/DwWLPgy.jpg" />
+    <meta property="og:description" content="Fermob 리디자인 홈페이지입니다." />
+    <meta property="og:site_name" content="Fermob Korea" />
+    <meta property="og:locale" content="Kor" />
+    <meta name="keywords" content="Fermob, Fermob Korea, 페르몹" />
+    <meta name="author" content="유동균" />
+    <meta name="description" content="Fermob 리디자인 홈페이지입니다." />
     <link rel="stylesheet" href="./src/css/style.css" />
     <title>Fermob</title>
   </head>
   <body>
     <div class="wrap">
+      <!-- header -->
       <header>
         <div class="logo">
           <a href="./index.html"
@@ -17,14 +28,14 @@
         </div>
         <nav>
           <ul class="depth1">
-            <li><a href="#">ABOUT</a></li>
+            <li><a href="./src/pages/shub1.html">ABOUT</a></li>
             <li>
               <a href="#">PRODUCT</a>
               <ul class="depth2">
                 <li>
-                  <a href="#">FURNITURE</a>
+                  <a href="./src/pages/shub2.html">FURNITURE</a>
                   <ul class="depth3">
-                    <li><a href="#">ALL</a></li>
+                    <li><a href="./src/pages/shub2.html">ALL</a></li>
                     <li><a href="#">Dining Chairs</a></li>
                     <li><a href="#">Lounge Chairs</a></li>
                     <li><a href="#">Benches</a></li>
@@ -94,9 +105,11 @@
           <span
             ><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a
           ></span>
-          <span class="mobile-menu-btn"
-            ><button><i class="fa-solid fa-bars"></i></button
-          ></span>
+          <button class="mobile-menu-btn">
+            <div></div>
+            <div></div>
+            <div></div>
+          </button>
         </div>
       </header>
       <!-- mobile botton header -->
@@ -114,16 +127,25 @@
       <!-- sitemap -->
       <div class="mobile-header-sitemap">
         <ul class="sitmap-about sitemap-depth1">
-          <li><a href="#">ABOUT</a></li>
+          <li>
+            <a href="./src/pages/shub1.html""><span>ABOUT</span></a>
+          </li>
         </ul>
         <ul class="sitmap-product sitemap-depth1">
           <li>
-            <a href="#">PRODUCT</a>
+            <a class="depth2-open-btn" href="#"
+              >PRODUCT
+              <div class="plus"><span></span><span></span></div
+            ></a>
+
             <ul class="sitemap-depth2">
               <li>
-                <a href="#">FURNITRUE</a>
+                <a class="depth3-open-btn" href="./src/pages/shub2.html"
+                  >FURNITRUE
+                  <div class="plus"><span></span><span></span></div
+                ></a>
                 <ul class="sitemap-depth3">
-                  <li><a href="#">ALL</a></li>
+                  <li><a href="./src/pages/shub2.html">ALL</a></li>
                   <li><a href="#">DINING CHAIRS</a></li>
                   <li><a href="#">LOUNGE CHAIRS</a></li>
                   <li><a href="#">BENCHES</a></li>
@@ -136,7 +158,10 @@
                 </ul>
               </li>
               <li>
-                <a href="#">CHILDREN</a>
+                <a class="depth3-open-btn" href="#"
+                  >CHILDREN
+                  <div class="plus"><span></span><span></span></div
+                ></a>
                 <ul class="sitemap-depth3">
                   <li><a href="#">ALL</a></li>
                   <li><a href="#">CHAIRS</a></li>
@@ -146,7 +171,10 @@
                 </ul>
               </li>
               <li>
-                <a href="#">ACCESSORIES</a>
+                <a class="depth3-open-btn" href="#"
+                  >ACCESSORIES
+                  <div class="plus"><span></span><span></span></div
+                ></a>
                 <ul class="sitemap-depth3">
                   <li><a href="#">ALL</a></li>
                   <li><a href="#">DINING ACCESSORIES</a></li>
@@ -157,7 +185,10 @@
                 </ul>
               </li>
               <li>
-                <a href="#">FABRIC</a>
+                <a class="depth3-open-btn" href="#"
+                  >FABRIC
+                  <div class="plus"><span></span><span></span></div
+                ></a>
                 <ul class="sitemap-depth3">
                   <li><a href="#">ALL</a></li>
                   <li><a href="#">CUSHIONS</a></li>
@@ -165,7 +196,10 @@
                 </ul>
               </li>
               <li>
-                <a href="#">SALES</a>
+                <a class="depth3-open-btn" href="#"
+                  >SALES
+                  <div class="plus"><span></span><span></span></div
+                ></a>
                 <ul class="sitemap-depth3">
                   <li><a href="#">ALL</a></li>
                 </ul>
@@ -180,7 +214,10 @@
         </ul>
         <ul class="sitmap-community sitemap-depth1">
           <li>
-            <a href="#">COMMUNITY</a>
+            <a class="depth2-open-btn" href="#"
+              >COMMUNITY
+              <div class="plus"><span></span><span></span></div
+            ></a>
             <ul class="sitemap-depth2">
               <li><a href="#">NOTICE</a></li>
               <li><a href="#">Q&A</a></li>

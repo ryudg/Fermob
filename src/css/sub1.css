@@ -1,0 +1,147 @@
+:root {
+  --main: #45474f;
+}
+* {
+  word-break: keep-all;
+}
+/* ----------main start---------- */
+main {
+  background: #ccc;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  border-bottom: 2px solid #000;
+  border-left: 2px solid #000;
+  border-right: 2px solid #000;
+}
+main video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+@media (max-width: 1024px) {
+  main {
+    height: 70vh;
+  }
+}
+/* ----------main end---------- */
+
+/* ----------section start---------- */
+section {
+  padding: 50px;
+  border-left: 2px solid #000;
+  border-right: 2px solid #000;
+}
+section .about {
+  display: flex;
+  gap: 50px;
+}
+section .about .about-img {
+  width: 100%;
+}
+section .about .about-img img {
+  width: 100%;
+  border: 2px solid #000;
+  height: 100%;
+}
+.about-text-title {
+  border-bottom: 3px solid #000;
+  margin-bottom: 20px;
+}
+.about-text-title h1,
+.about-text-title h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: var(--main);
+  font-weight: 700;
+}
+.about-text-sub {
+  font-size: 24px;
+}
+.about-text-sub p {
+  color: rgb(51, 164, 209);
+  margin-bottom: 10px;
+}
+.about-text-sub .red {
+  color: red;
+  font-weight: 700;
+}
+.about-text-main h1 {
+  background: rgb(255, 208, 0);
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+.about-text-main p {
+  line-height: 1.5em;
+  margin-bottom: 10px;
+}
+.location {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+}
+.location .location-title {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.location .location-title h2 {
+  border-bottom: 3px solid #000;
+  padding-bottom: 10px;
+}
+.location .location-title h1,
+.location .location-title h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: var(--main);
+  font-weight: 700;
+}
+.location .location-title-text {
+  margin-bottom: 20px;
+}
+.location .location-title div p {
+  margin-top: 10px;
+  font-size: 22px;
+}
+.location .map {
+  width: 50%;
+  height: 400px;
+  border: 2px solid #000;
+}
+.location .map iframe {
+  width: 100%;
+  height: 100%;
+}
+footer {
+  border: 2px solid #000;
+}
+@media (max-width: 1024px) {
+  section .about {
+    flex-direction: column;
+  }
+  section .about .about-img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  section .about .about-img img {
+    width: 100%;
+    height: 50%;
+  }
+  .location {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .location-title {
+    order: 2;
+  }
+  .location .map {
+    order: 1;
+    width: 100%;
+  }
+}
+/* ----------section end---------- */
