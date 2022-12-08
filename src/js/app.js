@@ -1,56 +1,12 @@
-let bestSubItems = document.querySelectorAll(
-  ".best-selling-item .best-selling-items a img"
-);
-let bestSubItems2 = document.querySelectorAll(
-  ".best-selling-item2 .best-selling-items a img"
-);
-let bestSubItems3 = document.querySelectorAll(
-  ".best-selling-item3 .best-selling-items a img"
-);
-let bestSubItems4 = document.querySelectorAll(
-  ".best-selling-item4 .best-selling-items a img"
-);
-let newArrivalsItem = document.querySelectorAll(
-  ".new-arrivals .new-arrivals-item a img"
-);
+/* 메뉴 open/close */
+let titleBtn = document.querySelectorAll(".section-title");
+let itemBox = document.querySelectorAll(".item-box");
+let downIcon = document.querySelectorAll(".down");
+for (let i = 0; i < titleBtn.length; i++) {
+  titleBtn[i].addEventListener("click", () => {
+    itemBox[i].classList.toggle("active");
+    downIcon[i].classList.toggle("active");
+  });
+}
 
-for (let i = 0; i < bestSubItems.length; i++) {
-  bestSubItems[i].addEventListener("mouseover", function (e) {
-    e.target.src = `./src/images/chairBest0${i + 1}-1.png`;
-  });
-  bestSubItems[i].addEventListener("mouseout", function (e) {
-    e.target.src = `./src/images/chairBest0${i + 1}.png`;
-  });
-}
-for (let i = 0; i < bestSubItems2.length; i++) {
-  bestSubItems2[i].addEventListener("mouseover", function (e) {
-    e.target.src = `./src/images/tableBest0${i + 1}-1.png`;
-  });
-  bestSubItems2[i].addEventListener("mouseout", function (e) {
-    e.target.src = `./src/images/tableBest0${i + 1}.png`;
-  });
-}
-for (let i = 0; i < bestSubItems3.length; i++) {
-  bestSubItems3[i].addEventListener("mouseover", function (e) {
-    e.target.src = `./src/images/childeBest0${i + 1}-1.png`;
-  });
-  bestSubItems3[i].addEventListener("mouseout", function (e) {
-    e.target.src = `./src/images/childeBest0${i + 1}.png`;
-  });
-}
-for (let i = 0; i < bestSubItems4.length; i++) {
-  bestSubItems4[i].addEventListener("mouseover", function (e) {
-    e.target.src = `./src/images/acceBest0${i + 1}-1.png`;
-  });
-  bestSubItems4[i].addEventListener("mouseout", function (e) {
-    e.target.src = `./src/images/acceBest0${i + 1}.png`;
-  });
-}
-for (let i = 0; i < newArrivalsItem.length; i++) {
-  newArrivalsItem[i].addEventListener("mouseover", function (e) {
-    e.target.src = `./src/images/newArr0${i + 1}-1.png`;
-  });
-  newArrivalsItem[i].addEventListener("mouseout", function (e) {
-    e.target.src = `./src/images/newArr0${i + 1}.png`;
-  });
-}
+/* 이미지 변경 */
