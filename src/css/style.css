@@ -35,7 +35,7 @@ header nav .depth1 li a {
   padding: 20px 20px;
   margin: 0 10px;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 600;
   color: #000;
 }
 header nav .depth1 li a:hover {
@@ -109,6 +109,7 @@ header .header-icon span a i {
   background: none;
   font-size: 24px;
   cursor: pointer;
+  color: #000;
 }
 .mobile-menu-btn button:hover {
   color: var(--main);
@@ -145,6 +146,60 @@ header .header-icon span a i {
   }
 }
 /* header media end */
+/* moblie header start*/
+.mobile-header-menu {
+  position: fixed;
+  bottom: 0;
+  height: 60px;
+  width: 100%;
+  background: #fff;
+  border-top: 2px solid #000;
+  z-index: 9999;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 24px;
+  display: none;
+}
+.mobile-header-menu a {
+  color: #000;
+}
+.mobile-header-menu a:hover {
+  color: var(--main);
+}
+@media (max-width: 1024px) {
+  body {
+    margin-bottom: 58px;
+  }
+  .mobile-header-menu {
+    display: flex;
+  }
+}
+/* moblie header end*/
+/* mobile site map start */
+.mobile-header-sitemap {
+  position: fixed;
+  width: 100%;
+  background: #fff;
+  top: 60px;
+  z-index: 9999;
+  /*   display: none; */
+}
+.mobile-header-sitemap > ul {
+  border-bottom: 2px solid #000;
+}
+/* .mobile-header-sitmap > ul > li > ul > li {
+  display: none;
+} */
+/* .mobile-header-sitmap > ul > li > ul > li > ul > li {
+  display: none;
+} */
+.sitemap-depth3 li {
+  height: 30px;
+  border: 1px solid yellow;
+}
+
+/* mobile site map end */
 /* ----------header end---------- */
 
 /* ----------main start---------- */
@@ -186,6 +241,7 @@ section {
   cursor: pointer;
   background: none;
   width: 100%;
+  color: #000;
 }
 .new-arrivals .section-title,
 .news .section-title {
@@ -194,7 +250,7 @@ section {
 .news .section-title {
   border-bottom: 2px solid #000;
 }
-.section-title h1 {
+.section-title .section-title-text {
   width: 180px;
   text-align: center;
 }
@@ -319,6 +375,9 @@ section {
 .item-box.active {
   display: block;
 }
+.news .item-box.active {
+  border-bottom: 2px solid #000;
+}
 @media (max-width: 1024px) {
   .best-selling-mainimg {
     display: none;
@@ -337,3 +396,57 @@ section {
   }
 }
 /* ----------section end---------- */
+
+/* ----------footer start---------- */
+footer {
+  word-break: keep-all;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-size: 12px;
+  border-left: 2px solid #000;
+  border-right: 2px solid #000;
+}
+footer .gray {
+  margin-left: 5px;
+  color: lightgray;
+}
+footer p,
+footer address {
+  margin-bottom: 10px;
+}
+footer .footerLink:hover {
+  color: var(--main);
+}
+footer .footer-icon {
+  width: 150px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 24px;
+  margin: 20px;
+}
+footer .footer-icon a {
+  color: #000;
+}
+footer .footer-icon a:hover {
+  color: var(--main);
+}
+footer .footer-copy-icon {
+  display: flex;
+  justify-content: center;
+}
+footer .footer-copy-icon img {
+  margin: 10px;
+}
+footer .footer-copy-link {
+  display: flex;
+  justify-content: center;
+}
+footer .footer-copy-link a {
+  margin: 10px;
+}
+footer .footer-copy-link a:hover {
+  color: var(--main);
+}
+/* ----------footer end---------- */

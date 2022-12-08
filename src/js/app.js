@@ -9,4 +9,4 @@ for (let i = 0; i < titleBtn.length; i++) {
   });
 }
 
-/* 이미지 변경 */
+/* 링크 초기화 */
