@@ -65,3 +65,23 @@ siteMapDepth3Btn.forEach(function (e, i) {
     });
   });
 });
+
+/* 메인 비주얼 이미지 변경 */
+let imgArr = [
+  "/src/images/main-bg01.png",
+  "/src/images/main-bg02.png",
+  "/src/images/main-bg03.png",
+];
+let mainVisual = document.querySelector(".main-visual");
+let imgNum = 0;
+setInterval(() => {
+  imgNum++;
+  if (imgNum == imgArr.length) {
+    imgNum = 0;
+  }
+  mainVisual.style.backgroundImage = `linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)
+  ),url(${imgArr[imgNum]})`;
+}, 3000);

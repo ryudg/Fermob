@@ -121,7 +121,7 @@ header .header-icon span a i {
 }
 
 .mobile-menu-btn div:first-child {
-  top: 0;
+  top: 0px;
 }
 .mobile-menu-btn.active div:first-child {
   top: calc(50% - 2.5px / 2);
@@ -137,7 +137,7 @@ header .header-icon span a i {
   top: calc(100% - 2.5px);
 }
 .mobile-menu-btn.active div:last-child {
-  top: calc(50% - 2.5px / 2);
+  top: calc(50% - 2.5px);
   transform: rotate(45deg);
 }
 .sale {

@@ -14,10 +14,12 @@ main {
   border-left: 2px solid #000;
   border-right: 2px solid #000;
 }
-main video {
+
+main iframe {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: fill;
+  padding-top: 60px;
 }
 @media (max-width: 1024px) {
   main {
