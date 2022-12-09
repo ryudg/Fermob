@@ -2,8 +2,19 @@
 
 > Fermob korea web site : https://fermobkorea.co.kr/index.html <br>
 > Reference site : https://rareraw.com <br>
-> Figma : https://www.figma.com/file/TSC6G5ciSKxE9Wnoaa0LOl/Fermob?node-id=0%3A1&t=QDZWEpeFUkYeVA7g-1
+>> Redesign site : https://ryudg.github.io/Fermob/
 --------------------
-- 기존 사이트 Naviation Menu 개선
-- Responsive Web 제작
-- Best Selling Items 위주 Main Page 구성
+## 기존 사이트 Naviation Menu 개선
+- [x] GNB drop down 간소화 및  개선
+- [x] 사이트맵 추가 
+
+## 반응형 웹으로 변경 제작
+- [x] GNB 반응형으로 변경
+- [x] Content 반응형으로 변경
+
+## favicon 및 meta data 추가
+- [x] Favicon 추가
+- [x] SEO 최적화
+
+![화면 캡처 2022-12-09 152124](https://user-images.githubusercontent.com/103430498/206638133-d6deeb73-5ca2-4c91-b3f7-43f4cf98c461.png)
+![화면 캡처 2022-12-09 152210](https://user-images.githubusercontent.com/103430498/206638141-2e5bcafa-2536-42b5-8228-4fea6b7b9104.png)
