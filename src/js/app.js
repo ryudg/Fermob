@@ -68,9 +68,9 @@ siteMapDepth3Btn.forEach(function (e, i) {
 
 /* 메인 비주얼 이미지 변경 */
 let imgArr = [
-  "/src/images/main-bg01.png",
-  "/src/images/main-bg02.png",
-  "/src/images/main-bg03.png",
+  "./src/images/main-bg01.png",
+  "./src/images/main-bg02.png",
+  "./src/images/main-bg03.png",
 ];
 let mainVisual = document.querySelector(".main-visual");
 let imgNum = 0;
