@@ -16,5 +16,8 @@
 - [x] Favicon 추가
 - [x] SEO 최적화
 
+## 🖥 PC 화면
 ![화면 캡처 2022-12-09 152124](https://user-images.githubusercontent.com/103430498/206638133-d6deeb73-5ca2-4c91-b3f7-43f4cf98c461.png)
+
+## 📱 Mobile 화면
 ![화면 캡처 2022-12-09 152210](https://user-images.githubusercontent.com/103430498/206638141-2e5bcafa-2536-42b5-8228-4fea6b7b9104.png)
